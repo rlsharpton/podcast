@@ -13,6 +13,7 @@ from collections import namedtuple
 Episode = namedtuple('Episode', 'title link pubdate show_id')
 episode_data = {}
 
+
 def download_info():
     url = 'https://talkpython.fm/episodes/rss'
 
