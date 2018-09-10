@@ -32,3 +32,10 @@ students = [lloyd, alice, tyler]
 
 for student, val in lloyd.items():
   print(student, val)
+
+# python 2
+students = [lloyd, alice, tyler]
+
+for stud in range(0,3):
+  for student, val in students[stud].items():
+    print student, val

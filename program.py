@@ -8,6 +8,7 @@ __version__ = 0.1
 '''
 
 def main():
+    show_header()
     service.download_info()
 
     for show_id in range(80, 145):
