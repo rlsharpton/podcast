@@ -23,8 +23,18 @@ tyler = {
   "quizzes": [0.0, 75.0, 78.0],
   "tests": [100.0, 100.0]
 }
+
+print(lloyd["homework"])
+#print(lloyd[1])
+print("***************************************")
 studs = [lloyd, alice, tyler]
 # Add your function below!
+
+for student in studs[]:
+  print("student: {}".format(student))
+  print("homework: {}".format(student))
+
+
 def average(numbers):
   total = sum(numbers)
   total = float(total)
@@ -42,4 +52,4 @@ def get_class_average(class_list):
         results.append(get_average(idx))
     print(results)
 
-get_class_average(lloyd)
+#get_class_average(lloyd)
