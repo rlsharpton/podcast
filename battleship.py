@@ -5,12 +5,15 @@ __version__ = 0.1
     rest of DocString goes here 
 '''
 
-board = []
-for outer in range(5):
-    x = print(["O"] * 5)
-    board.append(x)
+from itertools import count, accumulate
+import operator
 
-print("\n" * 2)
-print(board[3])
-#board.remove(y)
-#print(board)
+board1 = []
+for i in range(5):
+    x = list(("O" * 5))
+    board1.append(x)
+
+print(board1)
+
+joe = list(accumulate(range(1, 10), operator.mul))
+print(joe)
