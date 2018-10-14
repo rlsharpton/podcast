@@ -6,18 +6,18 @@ __version__ = 0.1
 '''
 
 def firstDuplicate(a):
+    ''' Should return the value and index of the first duplicate. '''
     for i in a:
-        y = 99
-        # if (a.count(i)) > 1:
-        #     y = a.index(i)
-        # else:
-        #     pass
+        y = a.count(i)
+        if y >  1:
+            idx = a.index(i)
+            val = i
+        else:
+            pass
+    return idx, val
 
-
-    #return y
-
-my_list = [2, 3, 1, 3, 5, 7]
-firstDuplicate(my_list)
+my_list = [2, 3, 1, 3, 5, 2, 8, 7]
+print(firstDuplicate(my_list))
 #print(firstDuplicate(my_list))
 
 class Bike:
