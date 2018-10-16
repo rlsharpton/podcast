@@ -38,3 +38,4 @@ alert_system = 'console'
 order_total = 140
 discount = 25 if order_total > 100 else 0
 print(order_total, discount)
+alert_system.strip('')
